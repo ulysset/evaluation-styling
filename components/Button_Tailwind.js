@@ -10,7 +10,7 @@ export default function ButtonTailwind({
 
   return (
     <button
-      className={`border border-transparent rounded-md focus:outline-none font-medium  transform hover:scale-110 transition-all
+      className={`border border-transparent rounded-md focus:outline-none font-medium transform hover:scale-110 transition-all
         ${
           importance === "primary" &&
           `text-white ${!clicked ? "bg-indigo-600 hover:bg-indigo-800" : "bg-red-600 hover:bg-red-800 text-white"}`
