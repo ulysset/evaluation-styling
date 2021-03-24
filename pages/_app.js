@@ -2,12 +2,11 @@ import "../styles/Global.scss";
 import "../styles/globals-tw.css";
 import "../components/Button_Sass.scss";
 import Link from "next/link";
+
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
-      <Component {...pageProps} />
-
-      <div className="flex flex-col space-y-2 text-indigo-700 ">
+    <div className="p-8">
+      <div className="mb-8 flex flex-col space-y-2 text-indigo-700">
         <Link href="/Tailwind">
           <a className="hover:text-indigo-300">Tailwind</a>
         </Link>
@@ -24,6 +23,7 @@ function MyApp({ Component, pageProps }) {
           <a className="hover:text-indigo-300">Emotion</a>
         </Link>
       </div>
+      <Component {...pageProps} />
     </div>
   );
 }
