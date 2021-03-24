@@ -1,4 +1,4 @@
-import "../styles/Global.scss";
+import "../styles/global.scss";
 import "../styles/globals-tw.css";
 import "../components/Button_Sass.scss";
 import Link from "next/link";

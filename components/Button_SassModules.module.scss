@@ -38,19 +38,21 @@
 
   &.importance_secondary {
     color: var(--indigo-400);
-
-    border-color: currentColor;
+    border-color: var(--indigo-400);
 
     &:hover {
       color: var(--indigo-500);
+      border-color: var(--indigo-500);
     }
 
     &.clicked_true {
       color: var(--red-500);
+      border-color: var(--red-500);
     }
 
     &.clicked_true:hover {
       color: var(--red-600);
+      border-color: var(--red-600);
     }
   }
 

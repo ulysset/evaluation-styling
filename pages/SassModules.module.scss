@@ -1,0 +1,30 @@
+@import "./../styles/bp.scss";
+
+.title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.container {
+  margin-top: var(--space-3);
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  place-items: center;
+  gap: var(--space-3);
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.Button_root {
+  justify-self: start;
+  align-self: start;
+
+  @media (min-width: $bp-lg) {
+    justify-self: end;
+    align-self: end;
+  }
+}

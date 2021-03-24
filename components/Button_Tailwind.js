@@ -4,7 +4,7 @@ export default function ButtonTailwind({
   importance = "primary",
   size = "normal",
   children = "Click me",
-  rootClassName = "",
+  rootStyle = "",
 }) {
   const [clicked, setClicked] = useState(false);
 
@@ -25,7 +25,7 @@ export default function ButtonTailwind({
         }
         ${size === "normal" && "px-2 py-1 text-base"}
         ${size === "big" && "px-4 py-3 text-xl"}
-        ${rootClassName}
+        ${rootStyle}
       `}
       onClick={() => setClicked(!clicked)}
       type="button"
