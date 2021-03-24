@@ -1,6 +1,5 @@
 import "../styles/Global.scss";
 import "../styles/globals-tw.css";
-import "../components/Button.scss";
 import Link from "next/link";
 function MyApp({ Component, pageProps }) {
   return (
@@ -8,16 +7,19 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
 
       <div className="flex flex-col space-y-2 text-indigo-700 ">
-        <Link href="/button-jsx">
+        <Link href="/Tailwind">
+          <a className="hover:text-indigo-300">Tailwind</a>
+        </Link>
+        <Link href="/JSX">
           <a className="hover:text-indigo-300">Styled JSX</a>
         </Link>
-        <Link href="/button-module">
+        <Link href="/SassModules">
           <a className="hover:text-indigo-300">SCSS Modules</a>
         </Link>
-        <Link href="/button-sass">
+        <Link href="/Sass">
           <a className="hover:text-indigo-300">SCSS</a>
         </Link>
-        <Link href="/button-styled">
+        <Link href="/Emotion">
           <a className="hover:text-indigo-300">Styled Components</a>
         </Link>
       </div>

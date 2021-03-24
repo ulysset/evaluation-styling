@@ -11,7 +11,7 @@ export default function Button(props) {
   });
   return (
     <button className={`Button_root ${className}`} data-id={props.dataId} onClick={() => setClicked(!clicked)}>
-      {!clicked ? "Click me" : "Clicked"}
+      {!clicked ? props.children : "Clicked"}
     </button>
   );
 }

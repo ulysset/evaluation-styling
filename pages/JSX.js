@@ -1,4 +1,4 @@
-import ButtonJsx from "../components/ButtonJsx";
+import Button from "../components/Button_JSX";
 
 export default function Home() {
   return (
@@ -7,18 +7,18 @@ export default function Home() {
         <h2 className="title">Styled Jsx</h2>
         <div className="flex align-top items-start space-x-2 pt-4 pl-3"></div>
         <div className="flex align-top items-start space-x-2 pt-4 pl-3">
-          <ButtonJsx importance="primary" size="normal">
+          <Button importance="primary" size="normal">
             Click me
-          </ButtonJsx>
-          <ButtonJsx importance="primary" size="big">
+          </Button>
+          <Button importance="primary" size="big">
             Click me
-          </ButtonJsx>
-          <ButtonJsx importance="secondary" size="normal">
+          </Button>
+          <Button importance="secondary" size="normal">
             Click me
-          </ButtonJsx>
-          <ButtonJsx importance="secondary" size="big">
+          </Button>
+          <Button importance="secondary" size="big">
             Click me
-          </ButtonJsx>
+          </Button>
         </div>
       </div>
 

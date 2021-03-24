@@ -1,4 +1,4 @@
-import StyledButton from "../components/StyledButton";
+import Button from "../components/Button_Emotion";
 
 export default function Home() {
   return (
@@ -7,18 +7,18 @@ export default function Home() {
         <h2 className="title">Styled Jsx</h2>
         <div className="flex align-top items-start space-x-2 pt-4 pl-3"></div>
         <div className="flex align-top items-start space-x-2 pt-4 pl-3">
-          <StyledButton importance="primary" size="normal">
+          <Button importance="primary" size="normal">
             Click me
-          </StyledButton>
-          <StyledButton importance="primary" size="big">
+          </Button>
+          <Button importance="primary" size="big">
             Click me
-          </StyledButton>
-          <StyledButton importance="secondary" size="normal">
+          </Button>
+          <Button importance="secondary" size="normal">
             Click me
-          </StyledButton>
-          <StyledButton importance="secondary" size="big">
+          </Button>
+          <Button importance="secondary" size="big">
             Click me
-          </StyledButton>
+          </Button>
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Button.module.scss";
+import styles from "./Button_SassModules.module.scss";
 export default function ButtonTailwind({ importance = "primary", size = "normal", children = "Click me" }) {
   const [clicked, setClicked] = useState(false);
 
