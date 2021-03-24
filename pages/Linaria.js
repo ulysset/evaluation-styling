@@ -13,24 +13,28 @@ export default function Home() {
     <>
       <h2
         {...style(css`
-          font-size: var(--text-lg);
-          font-weight: var(--font-weight-bold);
+          &.base {
+            font-size: var(--text-lg);
+            font-weight: var(--font-weight-bold);
+          }
         `)}
       >
         Linaria
       </h2>
       <div
         {...style(css`
-          margin-top: var(--space-3);
-          width: 100%;
+          &.base {
+            margin-top: var(--space-3);
+            width: 100%;
 
-          display: grid;
-          grid-template-rows: repeat(4, 1fr);
-          place-items: center;
-          gap: var(--space-3);
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            place-items: center;
+            gap: var(--space-3);
 
-          ${bp.lg} {
-            grid-template-columns: repeat(4, 1fr);
+            ${bp.lg} {
+              grid-template-columns: repeat(4, 1fr);
+            }
           }
         `)}
       >
@@ -38,12 +42,14 @@ export default function Home() {
           importance="primary"
           size="normal"
           rootStyle={css`
-            justify-self: start;
-            align-self: start;
+            &.base {
+              justify-self: start;
+              align-self: start;
 
-            ${bp.lg} {
-              justify-self: end;
-              align-self: end;
+              ${bp.lg} {
+                justify-self: end;
+                align-self: end;
+              }
             }
           `}
         >
