@@ -1,6 +1,5 @@
 import "../styles/global.scss";
 import "../styles/globals-tw.css";
-import "../components/Button_Sass.scss";
 import Link from "next/link";
 
 function MyApp({ Component, pageProps }) {
@@ -9,9 +8,6 @@ function MyApp({ Component, pageProps }) {
       <div className="mb-8 flex flex-col space-y-2 text-indigo-700">
         <Link href="/Tailwind">
           <a className="hover:text-indigo-300">Tailwind</a>
-        </Link>
-        <Link href="/Sass">
-          <a className="hover:text-indigo-300">Sass</a>
         </Link>
         <Link href="/SassModules">
           <a className="hover:text-indigo-300">Sass Modules</a>
