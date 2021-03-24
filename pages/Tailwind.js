@@ -5,8 +5,8 @@ export default function Home() {
     <div className="space-y-3">
       <div>
         <h2 className="text-lg font-bold">Tailwind</h2>
-        <div className="mt-12 w-full grid grid-cols-4 justify-items-center">
-          <Button importance="primary" size="normal">
+        <div className="mt-12 w-full grid grid-cols-4 place-items-center">
+          <Button importance="primary" size="normal" rootClassName="self-end justify-self-end">
             Click me
           </Button>
           <Button importance="primary" size="big">
