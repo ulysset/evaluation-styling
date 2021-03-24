@@ -1,6 +1,6 @@
 import Button from "../components/Button_Sass";
 
-export default function App() {
+export default function Home() {
   return (
     <div className="App_root">
       <Button importance="primary" size="normal">
