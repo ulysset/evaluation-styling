@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styled from "@emotion/styled";
-
-const css = (string) => string;
+import css from "./../css.js";
 
 export default function ButtonTailwind({ importance = "primary", size = "normal", children = "Click me" }) {
   const [clicked, setClicked] = useState(false);

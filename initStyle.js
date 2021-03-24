@@ -1,16 +1,23 @@
-export default (config, styles) => {
+export default (styles, config) => {
   let modifiersClassName = "";
-  Object.entries(config).forEach((modifier) => {
-    if (styles[`${modifier[0]}_${modifier[1]}`]) {
-      modifiersClassName += " " + styles[`${modifier[0]}_${modifier[1]}`];
-    }
-  });
+  if (config) {
+    Object.entries(config.variations).forEach((variation) => {
+      if (styles[`${variation[0]}_${variation[1]}`]) {
+        modifiersClassName += " " + styles[`${variation[0]}_${variation[1]}`];
+      }
+    });
+    Object.entries(config.states).forEach((state) => {
+      if (styles[`${state[0]}_${state[1]}`]) {
+        modifiersClassName += " " + styles[`${state[0]}_${state[1]}`];
+      }
+    });
+  }
 
   return (elementClassName, passedClassName) => {
     const addedClassName = passedClassName ? ` ${passedClassName}` : "";
 
     return {
-      className: `${elementClassName}${modifiersClassName}${addedClassName}`,
+      className: `${elementClassName}${modifiersClassName}${addedClassName} ${styles.base}`,
     };
   };
 };
