@@ -17,11 +17,11 @@ function MyApp({ Component, pageProps }) {
         <Link href="/SassModules">
           <a className="hover:text-indigo-300">Sass Modules</a>
         </Link>
-        <Link href="/JSX">
+        <Link href="/StyledJSX">
           <a className="hover:text-indigo-300">Styled JSX</a>
         </Link>
         <Link href="/Emotion">
-          <a className="hover:text-indigo-300">Styled Components</a>
+          <a className="hover:text-indigo-300">Emotion</a>
         </Link>
       </div>
     </div>

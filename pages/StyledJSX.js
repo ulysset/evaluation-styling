@@ -1,10 +1,10 @@
-import Button from "../components/Button_JSX";
+import Button from "../components/Button_StyledJSX";
 
 export default function Home() {
   return (
     <div>
       <div>
-        <h2 className="title">Styled Jsx</h2>
+        <h2 className="title">Styled JSX</h2>
         <div className="flex align-top items-start space-x-2 pt-4 pl-3"></div>
         <div className="flex align-top items-start space-x-2 pt-4 pl-3">
           <Button importance="primary" size="normal">
