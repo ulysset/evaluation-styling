@@ -5,7 +5,7 @@ export default function Home() {
     <div className="space-y-3">
       <div>
         <h2 className="text-lg font-bold">Tailwind</h2>
-        <div className="flex align-top items-start space-x-2 pt-4 pl-3">
+        <div className="mt-12 w-full grid grid-cols-4 justify-items-center">
           <Button importance="primary" size="normal">
             Click me
           </Button>
