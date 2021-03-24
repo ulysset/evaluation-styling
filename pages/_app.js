@@ -18,6 +18,9 @@ function MyApp({ Component, pageProps }) {
         <Link href="/Emotion">
           <a className="hover:text-indigo-300">Emotion</a>
         </Link>
+        <Link href="/Linaria">
+          <a className="hover:text-indigo-300">Linaria</a>
+        </Link>
       </div>
       <Component {...pageProps} />
     </div>
