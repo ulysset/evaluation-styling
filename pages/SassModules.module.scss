@@ -14,7 +14,7 @@
   place-items: center;
   gap: var(--space-3);
 
-  @media (min-width: $bp-lg) {
+  @media ($bp-lg) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -23,7 +23,7 @@
   justify-self: start;
   align-self: start;
 
-  @media (min-width: $bp-lg) {
+  @media ($bp-lg) {
     justify-self: end;
     align-self: end;
   }
