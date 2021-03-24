@@ -1,6 +1,6 @@
 import { css } from "@linaria/core";
-import Button from "../components/Button_Linaria";
 import initStyle from "./../initStyleLinaria";
+import Button from "../components/Button_Linaria";
 
 const bp = {
   lg: "@media (min-width: 1064px)",
