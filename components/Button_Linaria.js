@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { css } from "@linaria/core";
 import initStyle from "./../initStyleLinaria";
+import { color } from "./../styles/theme";
 
 export default function Button(props) {
   const [clicked, setClicked] = useState(false);
@@ -37,7 +38,7 @@ export default function Button(props) {
             white-space: nowrap;
             font-family: var(--font-sans-serif);
             font-weight: var(--font-weight-medium);
-            color: var(--white);
+            color: ${color.white};
 
             &:hover {
               transform: scale(1.1);
@@ -45,18 +46,18 @@ export default function Button(props) {
           }
 
           &.importance_primary {
-            background-color: var(--indigo-500);
+            background-color: ${color.indigo.$5};
 
             &:hover {
-              background-color: var(--indigo-600);
+              background-color: ${color.indigo.$6};
             }
 
             &.clicked_true {
-              background-color: var(--red-500);
+              background-color: ${color.red.$5};
             }
 
             &.clicked_true:hover {
-              background-color: var(--red-600);
+              background-color: ${color.red.$6};
             }
           }
 
