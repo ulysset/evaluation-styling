@@ -1,3 +1,7 @@
+const breakpoint = {
+  large: "@media (min-width: 1064px)",
+};
+
 const color = {
   white: "var(--white)",
   indigo: {
@@ -12,4 +16,4 @@ const color = {
   },
 };
 
-export { color };
+export { breakpoint, color };

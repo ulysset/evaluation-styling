@@ -1,10 +1,7 @@
 import { css } from "@linaria/core";
 import initStyle from "./../initStyleLinaria";
+import { breakpoint } from "./../styles/theme";
 import Button from "../components/Button_Linaria";
-
-const bp = {
-  lg: "@media (min-width: 1064px)",
-};
 
 export default function Home() {
   const style = initStyle();
@@ -32,7 +29,7 @@ export default function Home() {
             place-items: center;
             gap: var(--space-3);
 
-            ${bp.lg} {
+            ${breakpoint.large} {
               grid-template-columns: repeat(4, 1fr);
             }
           }
@@ -46,7 +43,7 @@ export default function Home() {
               justify-self: start;
               align-self: start;
 
-              ${bp.lg} {
+              ${breakpoint.large} {
                 justify-self: end;
                 align-self: end;
               }
